@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MyStory</title>
+	<meta charset="utf-8">
+	<meta name="author" content="pixelhint.com">
+	<meta name="description" content="Minima is a minimal, clean HTML5 multi-purpose template, well-coded & commented code"/>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/reset.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/main.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}"></script>
+</head>
+<body>
+
+	<header>
+
+		<div class="wrapper">
+			<a href="#" class="logo"> <img src="{{ url_for('static',filename='img/MyStorylogo.jpg') }}" alt="" title="MyStory"/> </a>
+			<nav>
+				<ul>
+					<li><a href="">Home</a></li>
+					
+					
+					<li><a href="">Recent Work</a></li>
+					
+				</ul>
+			</nav>
+		</div>
+		
+	</header><!-- End Header -->
+
+	<section class="billboard">
+		<section class="caption">
+			<p class="cap_title">MyStory</p>
+			<p class="cap_desc">Nơi chia sẻ những câu chuyện của bạn !</p>
+			<a href="login">Start here <i></i></a>
+		</section>
+	</section><!-- End billboard -->
+
+	<section class="services wrapper">
+		<ul>
+			<li>
+				<img class="s_icons" src="{{ url_for('static',filename='img/s1_icon.png')}}" title="" alt=""/>
+				<h3>MyStory</h3>
+				<p>Chia sẻ câu chuyện của bạn với mọi người.</p>		
+			</li>
+			
+			<li>
+				<img class="s_icons" src="{{ url_for('static',filename='img/s2_icon.png') }}" title="" alt=""/>
+				<h3>Diary</h3>
+				<p>Nơi bạn viết lên những suy nghĩ của bản thân.</p>		
+			</li>
+		</ul>
+	</section>
+
+
+	<section class="recent_work wrapper">
+		<h3 class="S_title">Recent Work</h3>
+
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="{{ url_for('static',filename='img/work_image.jpg') }}" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Brand Project
+				<i></i>
+			</a>
+		</div>
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="{{ url_for('static',filename='img/work_image.jpg') }}" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Brand Project 2
+				<i></i>
+			</a>
+		</div>
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="{{ url_for('static',filename='img/work_image.jpg') }}" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Brand Project 3
+				<i></i>
+			</a>
+		</div>
+		<div class="work">
+			<a href="#" class="work_img">
+				<img src="{{ url_for('static',filename='img/work_image.jpg') }}" alt="" title=""/>
+			</a>
+			<a href="#" class="work_title">
+				Brand Project 4
+				<i></i>
+			</a>
+		</div>
+	</section><!-- End recent_work -->
+
+</body>
