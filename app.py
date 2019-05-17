@@ -66,7 +66,7 @@ def get_login():
 
 @app.route('/story')
 def get_story():
-    return render_template('layout.html')
+    return render_template('layout.html',data = get_allposts())
 
 @app.route('/story', methods = ["POST"])
 def post_story():
